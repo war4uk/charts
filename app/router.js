@@ -8,7 +8,10 @@ angular.module('chartsApp')
         //        controller: 'BookController',
       })
       .when('/', {
-        template: '<charts></charts>',
+        templateUrl: 'app/modules/common/mainpage/mainpage.layout.html',
+        controller: 'mainpageController',
+        controllerAs: 'ctrl',
+        caseInsensitiveMatch: true,
         // controller: 'ChapterController'
       })
       .otherwise({ redirectTo: '/' });
